@@ -1,0 +1,14 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: nodelables
+  labels:
+    env: development
+spec:
+  containers:
+   - name: c002
+     image: ubuntu
+     command: ["/bin/bash" , "-c" , "while true; do echo Hello-basit; sleep 5; done"]
+
+  nodeSelector:
+    hardware: t2-medium
