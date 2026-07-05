@@ -1,0 +1,13 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: peshpod
+  labels:
+    env: development
+    owner: great
+
+spec:
+  containers:
+   - name: c001
+     image: ubuntu
+     command: ["/bin/bash", "-c", "while true; do echo Hello-Abdulbasitihsan; sleep 5 ; done"]
